@@ -28,6 +28,18 @@
       <a-asset-item id="mtl" src="./ARS君green.mtl"></a-asset-item>   <!-- mtlファイル -->
       
     </a-assets>
+    
+            <script>
+          window.addEventListener('click', function () {
+            var video = document.querySelector('#ar-video_kinniku');
+            if (video.paused == true) {
+              video.play();
+              } else {
+              video.pause();
+            }
+          }, false);
+         
+        </script>
 
     <script>
         var video = null;
